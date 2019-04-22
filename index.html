@@ -1,0 +1,896 @@
+ <!-- FlatFy Theme - Andrea Galanti /-->
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Flatfy Free Flat and Responsive HTML5 Template ">
+    <meta name="author" content="">
+
+    <title>Persianas</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+ 
+    <!-- Custom Google Web Font -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+	
+    <!-- Custom CSS-->
+    <link href="css/general.css" rel="stylesheet">
+	
+	 <!-- Owl-Carousel -->
+    <link href="css/custom.css" rel="stylesheet">
+	<link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet">
+
+<style type="text/css">
+	/* Slider */
+.slick-slider {
+  position: relative;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-list:focus {
+  outline: none;
+}
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  max-height: 731px;
+  overflow: hidden;
+}
+
+.slick-track:before,
+.slick-track:after {
+  display: table;
+  content: '';
+}
+
+.slick-track:after {
+  clear: both;
+}
+
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  display: none;
+  float: left;
+  height: 800px;
+  min-height: 1px;
+  width: 100%;
+}
+.slick-slide:focus, .slick-slide:hover {
+  outline: 0;
+}
+
+[dir='rtl'] .slick-slide {
+  float: right;
+}
+
+.slick-slide img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.slick-slide.slick-loading img {
+  display: none;
+}
+
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+/* Slider */
+.slick-loading .slick-list {
+  background: #fff url("./ajax-loader.gif") center center no-repeat;
+}
+
+/* Arrows */
+.slick-prev,
+.slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+  color: transparent;
+  outline: none;
+  background: transparent;
+}
+
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before {
+  opacity: 1;
+}
+
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  opacity: .25;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-family: 'FontAwesome';
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1;
+  opacity: .75;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: opacity 0.25s;
+}
+
+.slick-prev {
+  left: 0;
+  z-index: 1;
+}
+
+[dir='rtl'] .slick-prev {
+  right: 0;
+  left: auto;
+}
+
+.slick-prev:before {
+  content: '\f104';
+}
+
+[dir='rtl'] .slick-prev:before {
+  content: '\f105';
+}
+
+.slick-next {
+  right: 0;
+}
+
+[dir='rtl'] .slick-next {
+  right: auto;
+  left: 0;
+}
+
+.slick-next:before {
+  content: '\f105';
+}
+
+[dir='rtl'] .slick-next:before {
+  content: '\f104';
+}
+
+/* Dots */
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 16px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin: 0 8px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 16px;
+  height: 16px;
+  padding: 8px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+  outline: none;
+}
+
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+  opacity: 1;
+}
+
+.slick-dots li button:before {
+  font-family: 'FontAwesome';
+  font-size: 16px;
+  line-height: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  content: '\f111';
+  text-align: center;
+  opacity: .25;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: opacity 0.25s;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: .75;
+  color: black;
+}
+
+/**
+ * Photo
+ */
+.photo {
+  background-size: cover;
+  background-position: center center;
+  min-height: 10em;
+}
+.photo.is-animating {
+  animation: scale 5s ease-in-out forwards;
+}
+.photo:before {
+  content: "";
+  display: block;
+}
+.photo * > {
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1) rotate(0.01deg);
+  }
+}
+/**
+ * Wrapper
+ */
+.wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 45em;
+  width: 90%;
+}
+
+</style>
+
+	
+	<!-- Magnific Popup core CSS file -->
+	<link rel="stylesheet" href="css/magnific-popup.css"> 
+	
+	<script src="js/modernizr-2.8.3.min.js"></script>  <!-- Modernizr /-->
+	<!--[if IE 9]>
+		<script src="js/PIE_IE9.js"></script>
+	<![endif]-->
+	<!--[if lt IE 9]>
+		<script src="js/PIE_IE678.js"></script>
+	<![endif]-->
+
+	<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+	<![endif]-->
+
+</head>
+
+<body id="home">
+
+	<!-- Preloader -->
+	<div id="preloader">
+		<div id="status"></div>
+	</div>
+	<!-- NavBar-->
+	<nav class="navbar-default" role="navigation" style="position: fixed;">
+		<div class="container">
+			<div class="navbar-header">
+				
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="#home"><img src="img/logo.png" width="25%" ></a>
+			   <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse" style=" margin-top: 1% ">
+        <ul class="nav navbar-nav" >
+          
+          <li class="menuItem" ><a href="#home">Inicio</a></li>
+          <li class="menuItem"><a href="#useit">Nosotros</a></li>
+          <li class="menuItem"><a href="#screen">Productos</a></li>
+          <li class="menuItem"><a href="#credits">Ventajas</a></li>
+          <li class="menuItem"><a href="#contact">Contacto</a></li>
+        </ul>
+      </div>
+       
+      </div>
+
+			
+		</div>
+	</nav> 
+	
+	<!-- FullScreen -->
+<!--     <div class="intro-header">
+		<div class="col-xs-12 text-center abcen1">
+			<h1  data-wow-delay="0.4s" style="color: white;">Persianas y algo mas</h1>
+			<h3 data-wow-delay="0.6s" style="color: white;"><p style="margin-left :15%;margin-right :15%; font-size: 25px;"><br>Pioneros en accionamientos modernos y nuevos materiales, desde el año 2008 somos la empresa preferida para decoración con persianas.</p></h3>
+			<ul class="list-inline intro-social-buttons">
+				<li><a href="#credits" class="btn  btn-lg mybutton_cyano wow fadeIn" data-wow-delay="0.8s"><span class="network-name">¿Por que elegirnos?</span></a>
+				</li>
+			<li><a href="#contact" class="btn  btn-lg mybutton_cyano wow fadeIn" data-wow-delay="0.8s"><span class="network-name">Contactanos</span></a><br>
+				</li>
+			</ul>
+		</div>    
+ -->
+
+
+
+
+
+
+
+
+
+		<div class="slick-slider js-slick">
+  <div class="photo is-animating" style="background-image: url('img/intro/1.png');">
+<br><br>
+			<h1   style="color: white; margin-top: 10%" align="center">Persianas y algo mas</h1>
+			<h3  style="color: white;"><p align="center" style="margin: 100px; font-size: 25px;"><br>Pioneros en accionamientos modernos y nuevos materiales, desde el año 2008 somos la empresa preferida para decoración con persianas.</p></h3>
+			<ul class="list-inline intro-social-buttons" align="center">
+				<li><a href="#credits" class="btn  btn-lg mybutton_cyano wow fadeIn" data-wow-delay="0.8s"><span class="network-name">¿Por que elegirnos?</span></a>
+				</li>
+			<li><a href="#contact" class="btn  btn-lg mybutton_cyano wow fadeIn" data-wow-delay="0.8s"><span class="network-name">Contactanos</span></a><br>
+				</li>
+			</ul>
+  </div>
+
+  <div class="photo" style="background-image: url('img/intro/5.png');">
+<br><br>
+			<h1   style="color: white; margin-top: 10%" align="center">Persianas y algo mas</h1>
+			<h3  style="color: white;"><p align="center" style="margin: 100px; font-size: 25px;"><br>Pioneros en accionamientos modernos y nuevos materiales, desde el año 2008 somos la empresa preferida para decoración con persianas.</p></h3>
+			<ul class="list-inline intro-social-buttons" align="center">
+				<li><a href="#credits" class="btn  btn-lg mybutton_cyano wow fadeIn" data-wow-delay="0.8s"><span class="network-name">¿Por que elegirnos?</span></a>
+				</li>
+			<li><a href="#contact" class="btn  btn-lg mybutton_cyano wow fadeIn" data-wow-delay="0.8s"><span class="network-name">Contactanos</span></a><br>
+				</li>
+			</ul>
+  </div>
+
+  <div class="photo" style="background-image: url('img/intro/6.png');">
+  	<br><br>
+			<h1   style="color: white; margin-top: 10%" align="center">Persianas y algo mas</h1>
+			<h3  style="color: white;"><p align="center" style="margin: 100px; font-size: 25px;"><br>Pioneros en accionamientos modernos y nuevos materiales, desde el año 2008 somos la empresa preferida para decoración con persianas.</p></h3>
+			<ul class="list-inline intro-social-buttons" align="center">
+				<li><a href="#credits" class="btn  btn-lg mybutton_cyano wow fadeIn" data-wow-delay="0.8s"><span class="network-name">¿Por que elegirnos?</span></a>
+				</li>
+			<li><a href="#contact" class="btn  btn-lg mybutton_cyano wow fadeIn" data-wow-delay="0.8s"><span class="network-name">Contactanos</span></a><br>
+				</li>
+			</ul>
+  </div>
+
+ </div>
+
+        <!-- /.container -->
+		<div class="col-xs-12 text-center abcen wow fadeIn">
+			
+		</div>
+    </div>
+	
+	
+
+
+	<div class="content-section-b" id="useit"> 
+		<div class="col-md-6 col-md-offset-3 text-center wrap_title">
+				<h2>¿Quienes somos?</h2>
+				<p class="lead" style="margin-top:0">Un poco acerca de nosotros:</p>
+				
+			</div>
+		
+		<div class="container">
+            <div class="row">
+                <div class="col-sm-6 wow fadeInLeftBig">
+                    
+						<a href="img/iphone.png" class="image-link">
+							<div class="item">
+								<img  class="img-responsive img-rounded" src="img/1.png" alt="">
+							</div>
+						</a>
+				       
+                </div>
+				
+                <div class="col-sm-6 wow fadeInRightBig"  data-animation-delay="200">   
+                    <h3 class="section-heading"></h3>
+					<div class="sub-title lead3"></div>
+                    <p class="lead" style="font-size: 25px">
+						Pioneros en accionamientos modernos y nuevos materiales, desde el año 2008 somos la empresa preferida para decoración con persianas. <br> <br>
+						Nuestras persianas están pensadas para el control de la luz por medio de sistemas prácticos y simples. Perfectas por su practicidad y su look moderno. La decoración con persianas complementa diseños innovadores de ambientes.
+					</p>
+					 <a class="btn btn-embossed btn-info" href="#contact" role="button">¡Contactanos!</a></p>
+				</div>  			
+			</div>
+        </div>
+    </div>
+	
+	<!-- What is -->
+	<div id="screen" class="content-section-b" style="border-top: 0">
+		<div class="container">
+
+			<div class="col-md-6 col-md-offset-3 text-center wrap_title">
+				<h2>Productos</h2>
+				<p class="lead" style="margin-top:0">Te ofrecemos lo mejor en calidad y servicio</p>
+				
+			</div>
+			
+			<div class="row">
+			
+				<div class="col-sm-4 wow fadeInDown text-center">
+				  <!-- <img src="img/productos/1.jpg" width="100%" alt="Generic placeholder image"> -->
+				  <a href="img/productos/1.jpg" class="image-link">
+					<div>
+						<img  class="img-responsive img-rounded" width="100%" src="img/productos/1.jpg" alt="Owl Image">
+					</div>
+				</a>
+
+				  <br><br><p style="font-size: 25px;">Enrollable</p>
+				  <p class="lead" align="justify">Pensando en la mayor optimización del espacio, las cortinas enrollables son la alternativa perfecta, ya que su mecanismo con cabezal ocupa un mínimo de espacio en la ventana y el volumen de la cortina es lo justo para dar privacidad y control de luz.</p>
+
+				  <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+				</div><!-- /.col-lg-4 -->
+				
+				<div class="col-sm-4 wow fadeInDown text-center">
+				  <!-- <img src="img/productos/2.jpg" width="100%" alt="Generic placeholder image"> -->
+				  <a href="img/productos/2.jpg" class="image-link">
+					<div >
+						<img  class="img-responsive img-rounded" width="100%" src="img/productos/2.jpg" alt="Owl Image">
+					</div>
+				</a>
+				  <br><br> <p style="font-size: 25px;">Horizontales de madera y aluminio</p>
+				   <p class="lead" align="justify">Las persianas horizontales de PVC o Aluminio además de brindar una contribución única a la decoración de interiores, son una alternativa para el control de la luz, permitiendo modificar la atmósfera de la habitación y crear un nuevo ambiente. </p>
+				   <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+				</div><!-- /.col-lg-4 -->
+				
+				<div class="col-sm-4 wow fadeInDown text-center">
+				  <!-- <img src="img/productos/3.jpg" width="100%" alt="Generic placeholder image"> -->
+				  <a href="img/productos/3.jpg" class="image-link">
+					<div >
+						<img  class="img-responsive img-rounded" width="100%" src="img/productos/3.jpg" alt="Owl Image">
+					</div>
+				</a>
+				   <br><br> <p style="font-size: 25px;">Panel Americano</p>
+					<p class="lead" align="justify">
+					Es un producto que da una apariencia limpia y sencilla a los ambientes.
+					Es especial para cubrir ventanas grandes o puertaventanas de piso a techo.
+					Está disponible en una gran variedad de telas,  entre las cuales hay diferentes colecciones de Screen.
+					</p>
+				  <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+				</div><!-- /.col-lg-4 -->
+				
+			</div><!-- /.row -->
+				
+			<div class="row tworow">
+			
+				<div class="col-sm-4  wow fadeInDown text-center">
+				  <!-- <img src="img/productos/4.jpg" width="100%" alt="Generic placeholder image"> -->
+				  <a href="img/productos/4.jpg" class="image-link">
+					<div >
+						<img  class="img-responsive img-rounded" width="100%" src="img/productos/4.jpg" alt="Owl Image">
+					</div>
+				</a>
+				  <br><br> <p style="font-size: 25px;">Pisos de PVC o HDF</p>
+				  <p class="lead" align="justify">Existen varios tipos de ensambles para pisos laminados. En las colecciones Classic 8mm, Minimalist 8mm y Earth 8mm contamos con el sistema patentado de clic Valinge, pioneros en el concepto de este tipo de pisos, que no necesitan ningún tipo de pegamento, facilitando su instalación.</p>
+				 <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+				</div><!-- /.col-lg-4 -->
+				
+				<div class="col-sm-4 wow fadeInDown text-center">
+				  <!-- <img src="img/productos/5.jpg" width="100%" alt="Generic placeholder image"> -->
+				  <a href="img/productos/5.jpg" class="image-link">
+					<div >
+						<img  class="img-responsive img-rounded" width="100%" src="img/productos/5.jpg" alt="Owl Image">
+					</div>
+				</a>
+				   <br><br> <p style="font-size: 25px;">Persianas Magic Light</p>
+				   <p class="lead" align="justify" align="justify">Vanguardista y elegante. Su diseño funcional permite un fácil manejo y cuidado. Perfecta para áreas en donde se requiera visibilidad, iluminación y privacidad.</p>
+				   <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+				</div><!-- /.col-lg-4 -->
+				
+				<div class="col-sm-4 wow fadeInDown text-center">
+				  <!-- <img src="img/productos/6.jpg" width="100%" alt="Generic placeholder image"> -->
+				  <a href="img/productos/6.jpg" class="image-link">
+					<div >
+						<img  class="img-responsive img-rounded" width="100%" src="img/productos/6.jpg" alt="Owl Image">
+					</div>
+				</a>
+				   <br><br> <p style="font-size: 25px;">Verticales de PVC</p>
+				 <p class="lead" align="justify">
+•Resistente al agua y a la humedad<br>
+•Modernos y exclusivos acabados <br>
+•Bajo costo en mantenimiento. <br>
+•Larga vida útil. <br>
+•No es tóxico libre de plomo. <br>
+•Inmune a la corrosiónbr	<br>
+•Fácil y suave manejo</p>
+				  <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+				</div><!-- /.col-lg-4 -->
+				
+			</div><!-- /.row -->
+		</div>
+	</div>
+
+
+		<div  class="content-section-c ">
+		<div class="container">
+			<div class="row">
+			<div class="col-md-6 col-md-offset-3 text-center white">
+				<h2>¡No lo pienses mas!</h2>
+				<p class="lead" style="margin-top:0">Estaremos encantandos en atenderte</p>
+			 </div>
+			<div class="col-md-6 col-md-offset-3 text-center">
+				<div class="mockup-content">
+						<div class="morph-button wow pulse morph-button-inflow morph-button-inflow-1">
+							<button type="button "><span>Envianos un mensaje</span></button>
+							<div class="morph-content">
+								<div>
+									<div class="content-style-form content-style-form-4 ">
+										<h2 class="morph-clone">Envianos un mensaje</h2>
+										<form>
+											<p><label>Nombre, email, telefono y mensaje</label><input type="text"/></p>
+											<p><button>Enviar</button></p>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+				</div>
+			</div>	
+			</div>>
+		</div>
+	</div>
+
+
+	<!-- Credits -->
+	<div id="credits" class="content-section-a">
+		<div class="container">
+			<div class="row">
+			
+			<div class="col-md-6 col-md-offset-3 text-center wrap_title">
+				<h2>Ventajas</h2>
+				<p class="lead" style="margin-top:0">A special thanks to Death.</p>
+			 </div>
+			 
+				<div class="col-sm-6  block wow bounceIn">
+					<div class="row">
+						<div class="col-md-4 box-icon rotate"> 
+							<i class="fa fa-desktop fa-4x "> </i> 
+						</div>
+						<div class="col-md-8 box-ct">
+							<h3> Variedad en estilos, diversos tamaños </h3><br>
+							<p> Más estilos para ajustar sea diversos tamaños y formas de ventanas, con mas telas y colores. Así, puede encontra la opción perfecta para su hogar. Además, se consiguen en Persianas y Algo Mas 2008 y sus sucursales (Panamá y Venezuela), las cuales cuentan con personal capacitado profesionalmente.</p>
+						</div>
+				  </div>
+			  </div>
+			  <div class="col-sm-6 block wow bounceIn">
+					<div class="row">
+					  <div class="col-md-4 box-icon rotate"> 
+						<i class="fa fa-picture-o fa-4x "> </i> 
+					  </div>
+					  <div class="col-md-8 box-ct">
+						<h3> Garantía de 3 años !</h3><br>
+						<p> Cada una de las cortinas y persianas está diseñada y ensamblada a la medida por artesanos capacitados. Asi pues; podemos respaldar todas sus compras con nuestra garantía, la cual asegura que sus cortinas y persianas se queden con usted. Usted recibe su garantia por escrito.</p> 
+					  </div>
+					</div>
+			  </div>
+		  </div>
+		  
+		  <div class="row tworow">
+				<div class="col-sm-6  block wow bounceIn">
+					<div class="row">
+						<div class="col-md-4 box-icon rotate"> 
+							<i class="fa fa-magic fa-4x "> </i> 
+						</div>
+						<div class="col-md-8 box-ct">
+							<h3> Innovación y tecnología !</h3><br>
+							<p> Casi todos los avances importantes en la industria de cortinas y persianas provienen de los talleres y laboratorios de pruebas de alta calidad. Desde la invención de las persianas venecianas, hasta las innovadoras persianas celulares, continuamos proporcionando cortinas y persianas que combinan lo último en moda, funcionalidad y tecnología. </p>
+						</div>
+				  </div>
+			  </div>
+			  <div class="col-sm-6 block wow bounceIn">
+					<div class="row">
+					  <div class="col-md-4 box-icon rotate"> 
+						<i class="fa fa-heart fa-4x "> </i> 
+					  </div>
+					  <div class="col-md-8 box-ct">
+						<h3> Seguridad</h3> <br>
+						<p> Con la gran variedad que te ofrecemos, usted puede lograr justo el grado de privacidad que necesita. Siempre que haya cordones sueltos cerca pueden surgir problemas si tiene niños o mascotas. Por eso, le ofrecemos sitemas de operación y funciones especiales diseñadas para hacer que su hogar sea más seguro y más hermoso.</p> 
+					  </div>
+					</div>
+			  </div>
+		  </div>
+		</div>
+	</div>
+
+	<div id="downloadlink" class="banner">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 text-center wrap_title">
+				<h2>Calidad Garantizada</h2><br>
+				<p class="lead" style="margin-top:0">Con nuestra alta y larga experiencia en el mercado, podemos cumplir con todos tus requeremientos</p>
+				<p><a href="#contact" class="btn btn-embossed btn-primary view" role="button">Contactar</a></p> 
+			 </div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Contact -->
+	<div id="contact" class="content-section-a">
+		<div class="container">
+			<div class="row">
+			
+			<div class="col-md-6 col-md-offset-3 text-center wrap_title">
+				<h2>Contactanos</h2>
+				<p class="lead" style="margin-top:0">Nuestro personal estara en encantado de atenderte</p>
+			</div>
+			
+			<form role="form" action="" method="post" >
+				<div class="col-md-6">
+					<div class="form-group">
+						<label for="InputName">Tu nombre</label>
+						<div class="input-group">
+							<input type="text" class="form-control" name="InputName" id="InputName" placeholder="Ingresa tu nombre" required>
+							<span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+						</div>
+					</div>
+					
+					<div class="form-group">
+						<label for="InputEmail">Email</label>
+						<div class="input-group">
+							<input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Ingresa tu email" required  >
+							<span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+						</div>
+					</div>
+
+					
+					<div class="form-group">
+						<label for="InputEmail">Escoge una opcion</label>
+						<div class="input-group">
+							<select class="form-control">
+						<option>Servicio</option>
+						<option>Persianas Nuevas</option>
+						<option>Mantenimiento o reparacion de persianas</option>
+						<option>cerramiento en vidrios templado</option>
+						<option>puertas de baño</option>
+						<option>cerramiento</option>
+					</select>
+							<span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+						</div>
+					</div>
+
+										
+					<div class="form-group">
+						<label for="InputMessage">Mensaje</label>
+						<div class="input-group">
+							<textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
+							<span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+						</div>
+					</div>
+
+					<input type="submit" name="submit" id="submit" value="Submit" class="btn wow tada btn-embossed btn-primary pull-right">
+				</div>
+			</form>
+			
+			<hr class="featurette-divider hidden-lg">
+				<div class="col-md-5 col-md-push-1 address">
+					<address>
+					<h3>Direccion</h3>
+					<p class="lead"><br>
+					Av Principal de las fuentes, Urb. el paraiso,</a><br>
+					Edificio Montecarlo, Local Número 3,<br>
+					Caracas, Venezuela. (Frente al lado del banesco)</p>
+					</address>
+					<a href="https://www.google.com/maps/preview?ie=UTF-8&q=The+Pentagon&fb=1&gl=us&hq=1400+Defense+Pentagon+Washington,+DC+20301-1400&cid=12647181945379443503&ei=qmYfU4H8LoL2oATa0IHIBg&ved=0CKwBEPwSMAo&safe=on"><b style="font-size: 20px;">Ver en googlemaps</b>
+
+
+
+					<h3>Social</h3>
+					<li class="social"> 
+					<a href="#"><i class="fa fa-facebook-square fa-size"> </i></a>
+					<a href="#"><i class="fa  fa-twitter-square fa-size"> </i> </a> 
+					<a href="#"><i class="fa fa-google-plus-square fa-size"> </i></a>
+					<a href="#"><i class="fa fa-flickr fa-size"> </i> </a>
+					</li>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <h3 class="footer-title">Persianas y algo mas 2008 C.A.</h3>
+            <p>Pioneros en accionamientos modernos y nuevos materiales, desde el año 2008 somos la empresa preferida para decoración con persianas.
+            </p>
+			
+			<!-- LICENSE -->
+			Nuestras persianas están pensadas para el control de la luz por medio de sistemas prácticos y simples. Perfectas por su practicidad y su look moderno. La decoración con persianas complementa diseños innovadores de ambientes.
+		   
+       <div style="margin-top: 10%">Desarrollado por QueQublicidad infoquepublicidad@gmail.com</div>
+	   
+          </div> <!-- /col-xs-7 -->
+
+
+
+          <div class="col-md-5">
+            <div class="footer-banner">
+              <h3 class="footer-title">Tambien puedes contactarnos:</h3>
+              <ul>
+                <li>Tel 1: (58) 02124510071</li>
+                <li>Tel 2: (58) 02128833147</li>
+                <li>Tel 3: (58) 04241635954</li>
+                <li>Tel 4: (58) 04242337637</li>
+                <li>persianasyalgomas2008@hotmail.com</li>
+                <li>persianasyalgomas2008@gmail.com</li>
+              </ul>
+             Todos los derechos reservados
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+	<script src="js/owl.carousel.js"></script>
+	<script src="js/script.js"></script>
+	<!-- StikyMenu -->
+	<script src="js/stickUp.min.js"></script>
+	<script type="text/javascript">
+	  jQuery(function($) {
+		$(document).ready( function() {
+		  $('.navbar-default').stickUp();
+		  
+		});
+	  });
+	
+	</script>
+	<!-- Smoothscroll -->
+	<script type="text/javascript" src="js/jquery.corner.js"></script> 
+	<script src="js/wow.min.js"></script>
+	<script>
+	 new WOW().init();
+	</script>
+	<script src="js/classie.js"></script>
+	<script src="js/uiMorphingButton_inflow.js"></script>
+	<!-- Magnific Popup core JS file -->
+	<script src="js/jquery.magnific-popup.js"></script> 
+	  <script src='jquery.min.js'></script>
+<script src='http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js'></script>
+
+<script type="text/javascript">
+	$(document).ready(function () {
+  $('.js-slick').slick({
+    autoplay: true,
+    autoplaySpeed: 3500,
+    dots: true,
+    draggable: false,
+    fade: true,
+    speed: 1000
+  });
+  
+  $('.js-slick').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+    $(slick.$slides).removeClass('is-animating');
+  });
+  
+  $('.js-slick').on('afterChange', function(event, slick, currentSlide, nextSlide) {
+    $(slick.$slides.get(currentSlide)).addClass('is-animating');
+  });
+});
+</script>
+
+</body>
+
+</html>
